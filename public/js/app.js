@@ -18,9 +18,7 @@ weatherForm.addEventListener("submit", async (e) => {
   const location = searchInput.value;
 
   try {
-    const response = await fetch(
-      `http://localhost:4400/weather?address=${location}`
-    );
+    const response = await fetch(`/weather?address=${location}`);
     const data = await response.json();
     if (data.error) {
       const errorEl = document.createElement("li");
