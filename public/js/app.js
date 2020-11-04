@@ -1,5 +1,3 @@
-console.log("Running client side js...");
-
 const weatherForm = document.getElementById("weather-form");
 const searchInput = document.getElementById("search-input");
 const forecastContainer = document.getElementById("forecast-container");
